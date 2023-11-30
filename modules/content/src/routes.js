@@ -8,6 +8,8 @@ const routes = express.Router();
 // ...
 
 routes.post('/resources', (_, res) => {
+
+    
     console.log('tms-content: Creating content resource.');
 
     // ...
@@ -16,7 +18,7 @@ routes.post('/resources', (_, res) => {
     
     // ...
 
-    res.status(201).send({
+    res.send({
         id
     });
 });
